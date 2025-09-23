@@ -40,6 +40,7 @@ def remove_last_item():
         groceryList.pop()
     return groceryList
 
+
 print("Remove Last Item:", remove_last_item())
 
 # Lambda for display
