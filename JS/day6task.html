@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script>
+      let product = ["apple", "orange", "kiwi"];
+      let price = [55, 66, 33];
+      // Merge the product names and prices into one array in the format: "Product: Apple - Price: 50"
+      let productList = product.map((item, index) => ({
+        name: item,
+        price: price[index],
+      }));
+      console.log(productList);
+      //    Display all product entries using a loop.
+      for (let x of productList) {
+        console.log(x);
+      }
+      // Filter and show only the products with prices greater than 50.
+      for (let x of productList) {
+        if (x.price > 50) {
+          console.log(x.name);
+        }
+      }
+      // Add a new product "Watermelon" with price 80 to the list, and then display the updated product list.
+      productList.push({ name: "Watermelon", price: 80 });
+      console.log(productList);
+    </script>
+  </head>
+  <body></body>
+</html>
