@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      //  Create variables for the number of items sold and their prices
+      let tshirtCount = 5;
+      let tshirtPrice = 400;
+
+      let capCount = 3;
+      let capPrice = 150;
+      
+      //   Calculate total earnings
+      let totalEarning = tshirtCount * tshirtPrice + capCount * capPrice;
+      // Display the total earnings
+      console.log("Total Earnings: ₹" + totalEarning);
+      // Change the price of the t-shirts to ₹450 and recalculate the total earnings.
+      tshirtPrice = 450;
+      let newtotal = tshirtCount * tshirtPrice + capCount * capPrice;
+      // Print the updated total.
+      console.log(" Updated Total Earnings: ₹" + newtotal);
+    </script>
+  </head>
+</html>

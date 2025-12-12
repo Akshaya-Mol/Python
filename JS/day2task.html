@@ -1,0 +1,29 @@
+<!-- You are building a simple library system. Each book has a title, an author, and a year of publication. You want to create a small program that stores a book's details and provides a method to display its information in a neat sentence.
+
+Your task:
+
+Create an object named book with properties: title, author, and year.
+
+Inside the object, add a method called getSummary that returns a sentence like:
+"The book 'The Alchemist' was written by Paulo Coelho in 1988."
+
+Write a function called printBookSummary(bookObj) that takes the book object as a parameter and displays the book summary using the method. -->
+<html>
+    <head>
+<script>
+    let book ={
+        title : "The Alchemist",
+        author: "Paulo Coelho",
+        year : 1998,
+        getSummary : function() {return `"The book '${this.title}' was written by ${this.author} in ${this.year}"`}
+    }
+    function printBookSummary(bookobj){
+        console.log(bookobj.getSummary())
+    }
+    printBookSummary(book);
+</script>
+    </head>
+    <body>
+
+    </body>
+</html>
